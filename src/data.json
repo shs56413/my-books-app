@@ -1,0 +1,14 @@
+{
+  "books": [
+    {
+      "type": {
+        "genre": "fiction",
+        "length": 200,
+        "color": "blue"
+      },
+      "purpose": "school",
+      "setting": "forest"
+    },
+    {}
+  ]
+}
