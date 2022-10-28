@@ -1,14 +1,15 @@
 import './App.css'
-import data from './data.json'
-import SideBar from './components/SideBar'
+import NavBar from './components/NavBar'
 
-const App = () => {
-  console.log(data)
+function App() {
   return (
-    <div className="flex-row">
-      <SideBar />
-
-      <h1>My Books App</h1>
+    <div>
+      <header>
+        <NavBar />
+        <div className="title">
+          <h1>Book Club</h1>
+        </div>
+      </header>
     </div>
   )
 }

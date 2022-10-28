@@ -4,29 +4,34 @@ body {
 
 .flex-row {
   display: flex;
-  min-height: 100vh;
 }
 
-.side-bar,
+.nav-bar,
 .main {
   text-align: center;
 }
 
-.side-bar {
+.nav-bar {
   background-color:#FFEDD9;
   border-right: 1px solid #333333;
   color: #333333;
-  width: 10vw;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+border-right: 1px solid #333333;
 }
 
-.side-bar h1{
+.nav-bar h1{
   font-size: large;
+  display: flex;
+  align-items: center;
+  border-right: solid 1px #333333;
+  padding-right: 30px;
 }
 
-.side-info {
-  color: #black;
-  padding: 1px;
+.title h1{
+  text-align:center; 
 }
 
