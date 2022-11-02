@@ -1,15 +1,24 @@
 import './App.css'
 import NavBar from './components/NavBar'
+import data from './data/data.json'
+import Book from './components/Book'
 
-function App() {
+
+function App(props) {
   return (
-    <div>
-      <header>
+    <div className="App">
+
+<header className="App-header">
         <NavBar />
         <div className="title">
-          <h1>Book Club</h1>
+          <h1>Bookster</h1>
         </div>
       </header>
+      <main>
+        {data.books.map((book) => (
+          <Book key={book.id} book={book} />
+        ))}
+      </main>
     </div>
   )
 }
