@@ -2,6 +2,7 @@ import './App.css'
 import NavBar from './components/NavBar'
 import data from './data/data.json'
 import Book from './components/Book'
+import SearchBar from './components/SearchBar'
 
 
 function App(props) {
