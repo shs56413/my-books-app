@@ -3,7 +3,7 @@ import NavBar from './components/NavBar'
 import data from './data/data.json'
 import Book from './components/Book'
 import SearchBar from './components/SearchBar'
-
+import Banner from './components/Banner'
 
 function App(props) {
   return (
@@ -11,6 +11,7 @@ function App(props) {
 
 <header className="App-header">
         <NavBar />
+        <SearchBar />
         <div className="title">
           <h1>Bookster</h1>
         </div>
@@ -20,6 +21,8 @@ function App(props) {
           <Book key={book.id} book={book} />
         ))}
       </main>
+      <Banner />
+
     </div>
   )
 }
