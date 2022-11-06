@@ -8,8 +8,6 @@ const NavBar = () => {
       <h1>Mystery</h1>
       <h1>Manga</h1>
       <h1>Programming</h1>
-
-      <h2></h2>
     </div>
   )
 }

@@ -33,14 +33,14 @@ function App(props) {
     <div className="App">
 
 <header className="App-header">
-        <NavBar />
+       
         <h1>Bookster</h1>
 
-        
-      
       </header>
+    
 
       <main>
+      <NavBar />
         {data.books.map((book) => (
           <Book key={book.id} book={book} />
         ))}

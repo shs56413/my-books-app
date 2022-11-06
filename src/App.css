@@ -12,23 +12,29 @@ body {
 }
 
 .nav-bar {
-  background-color:#FFEDD9;
+  opacity: 90%;
   border-right: 1px solid #333333;
+  height: 100%;
   color: #333333;
   width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-border-right: 1px solid #333333;
+  border-right: 1px solid #333333;
+  padding-left:50px;
 }
 
 .nav-bar h1{
-  font-size: large;
+  font-size: 20px;
+  color: black;
+  font-weight: 100px;
+  margin-right: 50px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   border-right: solid 1px #333333;
-  padding-right: 30px;
+  padding-right: 73px;
 }
 
 .App-header h1{
@@ -54,7 +60,8 @@ border-right: 1px solid #333333;
 
 
 .App-header {
-  min-height: 20vh;
+  background-color: blueviolet;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,7 +73,7 @@ border-right: 1px solid #333333;
 }
 
 img {
-  height: 200px;
+  height: 100px;
   border: white 1px solid;
   border-radius: 15px;
 }
@@ -82,72 +89,48 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
   width: 250px;
   padding: 10px;
   margin: 10px;
   border: rgb(53, 41, 41) 3px solid;
   border-radius: 15px;
   box-shadow: 10px 10px 5px darkgrey;
-
-  color: bisque;
 }
 
-#green {
+.book-card:hover {
+  background-color: teal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  border: rgb(53, 41, 41) 3px solid;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px darkgrey;
+  color: teal;
+}
+
+.book-card img{
+  height: 200px;
+  border: white 1px solid;
+  border-radius: 15px;
+}
+
+.book-card h1{
+  color: #131A26;
+}
+
+.book-card p{
+  color: #131A26;
+}
+
+#white {
   background-color: rgb(58, 69, 49);
 }
 
-#green:hover {
-  background-color:rgb(69, 96, 67)
-}
-
-
-#red {
-  background-color: rgb(101, 48, 48);
-}
-
-#red:hover {
-  background-color: rgb(135, 65, 65);
-}
-
-#blue {
-  background-color: rgb(46, 47, 87);
-}
-
-#blue:hover {
-  background-color: rgb(67, 68, 126);
-}
-
-#brown {
-  background-color: rgb(82, 59, 44);
-}
-
-#brown:hover {
-  background-color: rgb(121, 88, 65);
-}
-
-#teal {
-  background-color: rgb(50, 87, 86);
-}
-
-#teal:hover {
-  background-color: rgb(75, 130, 128);
-}
-
-#purple {
-  background-color: rgb(59, 42, 70);
-}
-
-#purple:hover {
-  background-color: rgb(92, 66, 109);
-}
-
-#gray {
-  background-color: rgb(118, 118, 118);
-}
-
-#gray:hover {
-  background-color: rgb(173, 173, 173);
+#White:hover {
+  background-color:rgb(19, 22, 18)
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
@@ -158,33 +141,6 @@ main {
   font-family: 'Raleway', sans-serif;
 }
 
-
-.nerdy-pen {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  color: #000;
-  -webkit-text-stroke-width: ;
-  -webkit-text-stroke-color: #000;
-  font-family: 'Share Tech Mono', monospace;    
-  text-align: center;
-  font-size: .50em;
-  position: relative;
-  margin-top: -89vh;
-  filter: blur(.5px);
-  radius: 5px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.nerdy-pen:hover {
-color: rgba(5, 1, 1, 0.075);
--webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: #fff;
-font-size: large;
-}
 
 :root {
   --primary:#A84FFF;
@@ -261,9 +217,11 @@ button{
 }
 
 .quote-box{
+  margin: 100px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 50vh;
 }
+
