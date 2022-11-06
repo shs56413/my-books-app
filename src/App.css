@@ -31,27 +31,43 @@ border-right: 1px solid #333333;
   padding-right: 30px;
 }
 
+.App-header h1{
+  margin: 30px 0
+}
+
+.banner {
+  background-color:white;
+  border-right: 1px solid #333333;
+  color: #333333;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+border-right: 1px solid #333333;
+}
+
+
 .title h1{
   text-align:center; 
 }
 
 
 .App-header {
-  background-color: #282c34;
   min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
   font-family: 'Caveat', cursive;
 
 }
 
 img {
   height: 200px;
-  border: bisque 1px solid;
+  border: white 1px solid;
   border-radius: 15px;
 }
 
@@ -142,3 +158,112 @@ main {
   font-family: 'Raleway', sans-serif;
 }
 
+
+.nerdy-pen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  color: #000;
+  -webkit-text-stroke-width: ;
+  -webkit-text-stroke-color: #000;
+  font-family: 'Share Tech Mono', monospace;    
+  text-align: center;
+  font-size: .50em;
+  position: relative;
+  margin-top: -89vh;
+  filter: blur(.5px);
+  radius: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nerdy-pen:hover {
+color: rgba(5, 1, 1, 0.075);
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #fff;
+font-size: large;
+}
+
+:root {
+  --primary:#A84FFF;
+  --secondary: #D81E5B;
+  --dark: #131A26;
+  --light: #EEEEEE;
+  --grey: #888888;
+
+  --font: 'Fira Sans', san-serif;
+  --font-quote:
+}
+
+.quote{
+  position: relative;
+}
+
+blockquote{
+  font-family: var(--font-quote);
+  max-width: 720px;
+  font-size: 2rem;
+  background-color: var(--dark);
+  padding: 3rem;
+  border-radius: 1.5rem;
+  color: white;
+}
+
+.anime, .character{
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: var (--light);
+  border-radius: 1.5rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  max-width: 360px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+.anime{
+  background-color: var(--secondary);
+  font-weight: 400;
+  transform: translate(-25%, 50%);
+}
+
+.character{
+  background-color:var(--primary);
+  font-weight: 700;
+  transform: translate(25%, 50%);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+button{
+  appearance: none;
+  border: none;
+  outline:none;
+  background-color:var(--primary);
+  color: #fff;
+  padding:0.75rem 1.5rem;
+  border-radius: 3rem ;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  transform: 0.4s;
+  cursor:pointer;
+  font-weight: 700;
+}
+
+  button:hover{
+    background-color: var(--secondary);
+}
+
+.quote-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
