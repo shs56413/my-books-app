@@ -14,8 +14,6 @@ function App(props) {
     quote:null
   });
 
-  
-
   const fetchQuote = async() => {
     return await fetch('https://animechan.vercel.app/api/random')
     .then(response => response.json());
@@ -32,10 +30,12 @@ function App(props) {
 
   return (
     <div className="App">
-<HomeBar/>
-<header className="App-header">
+      
+  <HomeBar/>
+  <header className="App-header">
+  
        <div>
-        <h1>Bookster</h1>
+        <img src="https://www.nookandfind.co.uk/wp-content/uploads/2020/08/this-is-a-mid-century-modern-inspired-living-room-with-books-on-the-shelf.jpg" id ="book-img" alt="book-img"></img>
         </div>
         <div>
           <img src="https://www.realsimple.com/thmb/U7bSxRgHak7Uvk1iYiS5s3Rsf4g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/1122-books-realsimple-8e1fc69bbeff4b74ac5daa7a2c1f04e9.jpg"></img>
@@ -55,11 +55,7 @@ function App(props) {
         <button onClick={generate}>Generate new quote</button>
 </footer>
       <Banner />
-
     </div>
-    
-
-
     
   )
 }

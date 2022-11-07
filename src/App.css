@@ -23,6 +23,21 @@ body {
   justify-content: space-between;
   border-right: 1px solid #333333;
   padding-left:50px;
+  margin: 30px 0;
+}
+
+.nav-bar:hover {
+  opacity: 90%;
+  border-right: 1px solid #333333;
+  height: 100%;
+  color: #888888;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 1px solid #333333;
+  padding-left:50px;
 }
 
 .nav-bar h1{
@@ -37,9 +52,28 @@ body {
   padding-right: 73px;
 }
 
+.nav-bar h1:hover{
+  font-size: 20px;
+  color: #888888;
+  font-weight: 100px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  border-right: solid 1px #333333;
+  padding-right: 73px;
+}
+
+h2{
+  margin-top: 35px;
+  margin-right: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  
+}
+
 .home-bar {
   opacity: 90%;
-  border-right: 1px solid #333333;
   height: 100%;
   color: #333333;
   width: 100vw;
@@ -47,7 +81,7 @@ body {
   flex-direction: row-reverse;
   align-items: right;
   margin-right: 20px;
-  margin-bottom: 1px;
+  margin-bottom: 20px;
 }
 
 .home-bar h1{
@@ -59,26 +93,28 @@ body {
   align-items: center;
 }
 
+.home-bar h1:hover{
+  font-size: 15px;
+  color: #888888;
+  font-weight: 100px;
+  margin-right: 70px;
+  display: flex;
+  align-items: center;
+}
 
 .App-header h1{
-  margin: 30px 20px;
+  margin: 25px 20px;
 }
 
 .banner {
   background-color:white;
-  border-right: 1px solid #333333;
   color: #333333;
-  width: 100vw;
+  width: 150vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-border-right: 1px solid #333333;
 }
-
-
-
-
 
 .App-header {
   background-color: ;
@@ -93,18 +129,33 @@ border-right: 1px solid #333333;
 }
 
 .App-header img{
-  height: 100%;
+  max-height: 90%;
+  height: 90%;
   width: 90%;
+  max-width: 90%;
   display: flex;
-  margin-left: 8%;
+  margin-left: 9%;
   margin-top: -80px;
   border: black 1px solid;
+  box-shadow: 10px 10px 5px darkgrey;
 }
 
 img {
   height: 100px;
   border: white 1px solid;
   border-radius: 15px;
+}
+
+#book-img{
+  max-height: 680px;
+  height: 680px;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  margin-left: 20%;
+  margin-top: -78px;
+  border: black 1px solid;
+  box-shadow: 10px 10px 5px darkgrey;
 }
 
 main {
@@ -120,24 +171,22 @@ main {
   justify-content: space-between;
   width: 250px;
   padding: 10px;
-  margin: 10px;
-  border: rgb(53, 41, 41) 3px solid;
+  margin: 20px;
+  border: rgb(53, 41, 41) 1px solid;
   border-radius: 15px;
   box-shadow: 10px 10px 5px darkgrey;
 }
 
 .book-card:hover {
-  background-color: rgb(56, 123, 224);
+  background-color: rgb(235, 226, 214);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 250px;
+  width: 260px;
   padding: 10px;
+  border: none;
   margin: 10px;
-  border: rgb(53, 41, 41) 3px solid;
-  border-radius: 15px;
   box-shadow: 10px 10px 5px darkgrey;
-  color: teal;
 }
 
 .book-card img{
@@ -184,6 +233,7 @@ main {
 
 .quote{
   position: relative;
+  
 }
 
 blockquote{
@@ -194,6 +244,7 @@ blockquote{
   padding: 3rem;
   border-radius: 1.5rem;
   color: white;
+  box-shadow: 10px 10px 5px darkgrey;
 }
 
 .anime, .character{
@@ -208,6 +259,7 @@ blockquote{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  
 
 }
 
@@ -215,6 +267,7 @@ blockquote{
   background-color:yellow;
   font-weight: 400;
   transform: translate(-25%, 50%);
+  box-shadow: 10px 10px 5px darkgrey;
 }
 
 .character{
@@ -224,6 +277,7 @@ blockquote{
   position: absolute;
   right: 0;
   bottom: 0;
+  box-shadow: 10px 10px 5px darkgrey;
 }
 
 button{
@@ -239,10 +293,12 @@ button{
   transform: 0.4s;
   cursor:pointer;
   font-weight: 700;
+  box-shadow: 10px 10px 5px darkgrey;
 }
 
   button:hover{
-    background-color: var(--secondary);
+    background-color:rgb(235, 226, 214);
+    color: black;
 }
 
 .quote-box{
@@ -252,5 +308,11 @@ button{
   align-items: center;
   justify-content: center;
   min-height: 50vh;
+  
 }
 
+.home-name{
+  display: flex;
+  flex-direction: row;
+  box-shadow: 10px 10px 5px darkgrey;
+}
