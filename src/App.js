@@ -41,8 +41,7 @@ function App(props) {
           <img src="https://www.realsimple.com/thmb/U7bSxRgHak7Uvk1iYiS5s3Rsf4g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/1122-books-realsimple-8e1fc69bbeff4b74ac5daa7a2c1f04e9.jpg"></img>
         </div>
       </header>
-    
-
+      
       <main>
       <NavBar />
         {data.books.map((book) => (

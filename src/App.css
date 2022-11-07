@@ -116,6 +116,15 @@ h2{
   justify-content: space-between;
 }
 
+.banner img{
+  opacity: 30%
+}
+
+.banner img:hover{
+  opacity: 100%
+}
+
+
 .App-header {
   background-color: ;
   min-height: 90vh;
@@ -226,14 +235,12 @@ main {
   --dark: #131A26;
   --light: #EEEEEE;
   --grey: #888888;
-
   --font: 'Fira Sans', san-serif;
   --font-quote:
 }
 
 .quote{
   position: relative;
-  
 }
 
 blockquote{
@@ -259,8 +266,6 @@ blockquote{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  
-
 }
 
 .anime{
